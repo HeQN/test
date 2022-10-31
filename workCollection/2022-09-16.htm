@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>信息统计表</title>
+		<title></title>
 		<style>
 			.smart-green {
 			margin-left:auto;
@@ -88,25 +88,26 @@
 		</style>
 	</head>
 	<body>
-		<table align="center" class="smart-green" width="350" border="1" cellpadding="2" cellspacing="0">
+		<table align="center" width="400" border="0" cellpadding="8" cellspacing="0" class="smart-green">
 			<form action="127.0.0.1" method="post">
 				<tr>
-					<td colspan="2" align="center"><h2>信息统计表</h2></td>
+					<td colspan="2" align="center"><h1>信息统计表</h1></td>
 					</tr>
 				<tr>	<!-- 姓名-->
 					<th>姓名：</th>
-					<td ><input type="text" name="username" size="20" /></td>
+					<td ><input type="text" name="username" size="20" placeholder="请输入你的姓名......" required/></td>
 				</tr>
 				<tr>
 					<th>年龄：</th><!-- 年龄-->
-					<td ><input type="text" name="username" size="20" /></td>
+					<td ><input type="number" name="username" size="20" placeholder="请输入你的年龄......"/ required/></td>
 				</tr>
 				 <!--  性别 -->
 					<th>性别：</th>
 					<td>
-						<input type="radio" name="sex" value="1" checked="checked" />男
+						<input type="radio" name="sex" value="1" checked="checked" />男&nbsp;&nbsp;
 						<input type="radio" name="sex" value="2" />女
 					</td>
+				
 				</tr>
 				<tr>	<!-- 爱好 -->
 					<th>爱好：</th>
@@ -118,7 +119,7 @@
 						<input type="checkbox" name="course[]" value="7">游泳
 					</td>
 				</tr>
-				<tr>	<!--  学历  -->
+				<tr>
 					<th>学历：</th>
 					<td>
 						<select name="edu">
@@ -129,15 +130,13 @@
 							<option value="4">研究生</option>
 							<option value="5">其他</option>
 						</select>
-					</td>
+					</tr>
+				
+				<tr >	<!-- 自我介绍 -->
+					
+					<td colspan="2">自我介绍：<br /><textarea name="eval" rows="4" cols="40" placeholder="请输入你的自我介绍......" required></textarea></td>
 				</tr>
-				
-				
-				
-				<tr>	<!-- 评价 -->
-					<th>自我介绍：</th>
-					<td ><textarea name="eval" rows="4" cols="40">自我介绍：</textarea></td>
-				</tr>
+
 				
 				<tr>	<!--  提/置-->
 					<td colspan="2" align="center">
