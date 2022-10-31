@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			 .pure-table {
+			            border-collapse: collapse;
+			            border-spacing: 0;
+			            empty-cells: show;
+			            border: 1px solid #cbcbcb;
+			            width: 100%;
+			        }
+		      .pure-table-odd td {
+		          background-color: #f2f2f2;
+		      }
+		  </style>
+	</head>
+	<body>
+		<table align="center" width="350" border="1" cellpadding="2" cellspacing="0"  class="pure-table">
+			<form action="127.0.0.1" method="post">
+				<tr>
+					<td colspan="2" align="center"><h2>信息登记表</h2></td>
+					</tr>
+				<tr>	<!-- 账号-->
+					<th>账号：</th>
+					<td ><input type="text" name="username" size="20" /></td>
+				</tr>
+				<tr>
+					<th>密码：</th><!-- 密码-->
+					<td ><input type="text" name="username" size="20" /></td>
+				</tr>
+				 <!--  性别 -->
+					<th>性别：</th>
+					<td>
+						<input type="radio" name="sex" value="1" checked="checked" />男
+						<input type="radio" name="sex" value="2" />女
+					</td>
+				</tr>
+				<tr>	<!-- 爱好 -->
+					<th>爱好：</th>
+					<td>
+						<input type="checkbox" name="course[]" value="4">旅游<br />
+						<input type="checkbox" name="course[]" value="5">绘画<br />
+						<input type="checkbox" name="course[]" value="6">健身<br />
+						<input type="checkbox" name="course[]" value="7">唱歌<br />
+						<input type="checkbox" name="course[]" value="7">游泳
+					</td>
+				</tr>
+				<tr>	<!-- 简介 -->
+					<th>简介：</th>
+					<td >
+						 <textarea id="topic" rows="10" name="topic"> 个人简介：</textarea>
+						   
+						
+					</td>
+				</tr>
+				
+				<tr>	<!--  提/置-->
+					<td colspan="2" align="center">
+						<input type="submit" name="submit" value="提交">
+						<input type="reset" name="reset" value="重置">
+					</td>
+				</tr>
+			</form>
+		</table>
+	</body>
+</html>
