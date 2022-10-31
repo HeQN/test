@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>calculator</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" charset="utf-8" src="index.js"></script>
+	<style>
+			.calculator {
+				width: 405px;
+				border: solid 1px;
+				background: #ffefd5;
+				margin: 50px;
+				padding: 20px;
+			}
+			.output {
+				width: 356px;
+				padding: 20px;
+				height: 50px;
+				font-size: 20px;
+				text-align: right;
+				background: white;
+			}
+			.numbers {
+				width: 300px;
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+			}
+			input[type=button] {
+				border: solid 1px white;
+				background: none;
+				width: 100px;
+				height: 80px;
+				background: grey;
+				cursor: pointer;
+				color: white;
+				font-size: 30px;
+			}
+			.operators {
+				display: -webkit-inline-box;
+				display: -ms-inline-flexbox;
+				display: inline-flex;
+				width: 100px;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				position: relative;
+				left: -3px;
+			}
+	</style>
+</head>
+<body>
+    <div class="">
+        <input class="output" value="0" id="iputNum" disabled="disabled"></input>
+        <div class="numbers">
+            <input type="button" value="7" onclick="numberClick(value)">
+            <input type="button" value="8" onclick="numberClick(value)">
+            <input type="button" value="9" onclick="numberClick(value)">
+            <input type="button" value="4" onclick="numberClick(value)">
+            <input type="button" value="5" onclick="numberClick(value)">
+            <input type="button" value="6" onclick="numberClick(value)">
+            <input type="button" value="1" onclick="numberClick(value)">
+            <input type="button" value="2" onclick="numberClick(value)">
+            <input type="button" value="3" onclick="numberClick(value)">
+            <input type="button" value="0" onclick="numberClick(value)">
+            <input type="button" value="AC" onclick="cleanClick(value)">
+            <input type="button" value="=" onclick="equalClick()">
+        </div>
+        <div class="operators">
+            <input type="button" value="*" onclick="operatorClick(value)">
+            <input type="button" value="-" onclick="operatorClick(value)">
+            <input type="button" value="+" onclick="operatorClick(value)">
+            <input type="button" value="/" onclick="operatorClick('/')">
+        </div>
+    </div>
+</body>
+</html>

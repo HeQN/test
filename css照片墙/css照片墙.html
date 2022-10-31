@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>css照片墙</title>
+		<style>
+			 body{
+			            background-color: darkgreen;
+			        }
+			        *{
+			            padding: 0px;
+			            margin: 0px;
+			        }
+			        .box{
+			            width: 960px;
+			            height: 450px;
+			            margin: 0 auto;
+			            position: relative;
+			        }
+			        h1{
+						font-family: 微软雅黑，宋体，楷体;
+						color:white;
+			            padding: 22px 0;
+			            text-align: center;
+			        }
+			        .box>img{
+			            width:210px;
+			            border: 1px solid #ddd;
+			            padding: 10px;
+			            background-color: #fff;
+			            position: absolute;
+			            transition: all .5s;
+			        }
+			   .img1{
+			            top: 0;
+			            left: 375px;
+			            transform: rotate(5deg);
+			        }
+			        .img2{
+			            top: 0;
+			            right: 130px;
+			            transform: rotate(-15deg);
+			        }
+			        .img3{
+			            top: 0;
+			            right: -30px;
+			            transform: rotate(10deg);
+			        }
+			        .img4{
+			            top:241px;
+			            right:368px;
+			            transform: rotate(-10deg);
+			        }
+			        .img5{
+			            top: 258px;
+			            left: 0;
+			            transform: rotate(10deg);
+			        }
+			        .img6{
+			            top: 0;
+			            left: 0;
+			            transform: rotate(-10deg);
+			        }
+			        .img7{
+			            top: 263px;
+			            right: -23px;
+			            transform: rotate(15deg);
+			        }
+			        .img8{
+			            bottom: 10px;
+			            left: 226px;
+			            transform: rotate(20deg);
+			        }
+			        .img9{
+			            bottom: 0px;
+			            left: 550px;
+			            transform: rotate(15deg);
+			        }
+			        .img10{
+			            top: 57px;
+			            left: 180px;
+			            transform: rotate(-10deg);
+			        }
+			        .box>img:hover{
+			            box-shadow: 10px 10px 10px rgba(0,0,0,.1);
+			            transform: scale(1.1);
+			            z-index: 666;	
+			        }
+
+		</style>
+	</head>
+	<body>
+		<h1>CSS 照片墙</h1>
+		<div class="box">
+		    <img src="1.jpg" alt="" class="img1">
+		    <img src="2.jpg" alt="" class="img2">
+		    <img src="3.jpg" alt="" class="img3">
+		    <img src="4.jpg" alt="" class="img4">
+		    <img src="5.jpg" alt="" class="img5">
+		    <img src="6.jpg" alt="" class="img6">
+		    <img src="7.jpg" alt="" class="img7">
+		    <img src="8.jpg" alt="" class="img8">
+		    <img src="9.jpg" alt="" class="img9">
+		    <img src="10.jpg" alt="" class="img10">
+		</div>
+	</body>
+</html>

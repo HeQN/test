@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .student,
+		.visitor {
+            width: 40px;
+            height: 40px;
+            position: relative;
+            transition: padding 1s;
+            overflow: hidden;
+        }
+
+        .student {
+            background-color: rgb(0, 136, 204);
+            margin-bottom: 20px;
+
+        }
+
+        .student img,
+        .visitor img {
+            width: 30px;
+			height: 30px;
+            position: absolute;
+			text-align: center;
+        }
+
+        .visitor {
+            background-color: rgb(231, 76, 60);
+        }
+
+        .text {
+            position: absolute;
+            left: -3px;
+            width: 200px;
+            height: 50px;
+            opacity: 1;
+            text-align: center;
+            line-height: 50px;
+            transition: opacity 1s;
+            color: white;
+        }
+
+        .student:hover {
+            padding-left: 150px;
+        }
+
+        .visitor:hover {
+            padding-left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div >
+        <div class="student">
+            <a class="text">学生 Stundet</a>
+            <img src="../img/01.png" >
+        </div>
+        <div class="visitor">
+            <a class="text">访客 Visitor</a>
+            <img src="../img/02.png" >
+        </div>
+    </div>
+</body>
+
+</html>

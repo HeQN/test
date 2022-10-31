@@ -1,0 +1,43 @@
+.calculator {
+    width: 405px;
+    border: solid 1px;
+    background: #ffefd5;
+    margin: 50px;
+    padding: 20px;
+}
+.output {
+    width: 356px;
+    padding: 20px;
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+    background: white;
+}
+.numbers {
+    width: 300px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+input[type=button] {
+    border: solid 1px white;
+    background: none;
+    width: 100px;
+    height: 80px;
+    background: grey;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
+.operators {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    left: -3px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset="UTF-8"" >
+		<title>title</title>
+		<style type="text/css">
+			 .pure-table {
+			            border-collapse: collapse;
+			            border-spacing: 0;
+			            empty-cells: show;
+			            border: 1px solid #cbcbcb;
+			            width: 100%;
+			        }
+		      .pure-table-odd td {
+		          background-color: #f2f2f2;
+		      }
+		  </style>
+	</head>
+	<body>
+		<table align="center" width="40" border="1" cellpadding="2" cellspacing="0"  class="pure-table">
+			<form action="127.0.0.1" method="post">
+			<tr>
+					<th>姓名：</th><!-- 姓名-->
+					<td ><input type="text" name="username" size="20" required/></td>
+				</tr>
+				<tr>
+					<th>年龄：</th><!-- 年龄-->
+					<td ><input type="number" name="userage"  max="3000" min="1" required/></td>
+				<tr>	<!--  出生日期  -->
+					<th>出生日期：</th>
+					<td>
+						<input type="date" min="1901-01-01" max="2022-09-26" required/>
+					</td>
+				</tr>
+				<tr>	<!-- email -->
+					<th>Email：</th>
+					<td ><input type="email" name="text" placeholder="邮件地址" required/></td>
+						
+				</tr>
+				<tr>	<!--  个人主页-->
+					<th>个人主页:</th>
+					<td >
+						<input required/>
+					</td>
+				</tr>
+				<tr>	<!--  个人简介-->
+					<th>个人简介:</th>
+					<td >
+						<textarea name="eval" rows="4" cols="40"></textarea>
+					</td>
+				</tr>
+				<tr>	<!--  提-->
+					<td colspan="2" align="center">
+						<input type="submit" name="submit" value="提交">
+					</td>
+				</tr>
+			</form>
+		</table>
+	</body>
+</html>
+

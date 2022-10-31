@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		input,
+		button {
+			background: transparent;
+			border: 0;
+			outline: none;
+		}
+
+		body {
+			height: 100vh;
+			background: linear-gradient(#141e30, #243b55);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 16px;
+			color: #03e9f4;
+		}
+
+		.loginBox {
+			width: 400px;
+			height: 364px;
+			background-color: #0c1622;
+			margin: 100px auto;
+			border-radius: 10px;
+			box-shadow: 0 15px 25px 0 rgba(0, 0, 0, .6);
+			padding: 40px;
+			box-sizing: border-box;
+		}
+
+		h2 {
+			text-align: center;
+			color: aliceblue;
+			margin-bottom: 30px;
+			font-family: 'Courier New', Courier, monospace;
+		}
+
+		.item {
+			height: 45px;
+			border-bottom: 1px solid #fff;
+			margin-bottom: 40px;
+			position: relative;
+		}
+
+		.item input {
+			width: 100%;
+			height: 100%;
+			color: #fff;
+			padding-top: 20px;
+			box-sizing: border-box;
+		}
+
+		.item input:focus+label,
+		.item input:valid+label {
+			top: 0px;
+			font-size: 2px;
+		}
+
+		.item label {
+			position: absolute;
+			left: 0;
+			top: 12px;
+			transition: all 0.5s linear;
+		}
+		.btn {
+		    text-align: center;
+		    padding: 10px;
+		    width: 100%;
+		    margin-top: 40px;
+		    background-color: #243b55;
+		    color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="loginBox">
+	<h2>欢迎来到主页</h2>
+		    <div class="container">
+		        <div class="login-wrapper">
+		            <div class="form-wrapper">
+				<div class="btn" ><span onclick="login()">登录</span></div>
+				<div class="btn" ><span onclick="register()">注册</span></div>
+		            </div>
+		            </div>
+		        </div>
+		    </div>
+			<script>
+						function register(){
+							one=window.open('2022-10-28-注册.html','_blank','width=400,height=400')
+							one.focus();
+						}
+						function login(){
+							two=window.open('2022-10-28-登录.html','_blank','width=400,height=400')
+							two.focus();
+						}
+			</script>
+			</div>
+</div>
+		</body>
+</html>
