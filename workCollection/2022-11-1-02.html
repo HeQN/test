@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>copy</title>
+	</head>
+	<script>
+		function Textcopied(){
+			var text = document.getElementById('text01').value
+			if(text.trim().length==0){
+			      checkUserNameResult.innerHTML = "内容不能为空";  
+			      obj.focus();
+			}else{
+				 document.getElementById('text02').value=text
+				 checkUserNameResult.innerHTML = "";
+				 document.getElementById('text03').innerHTML='复制成功！'
+			}
+				
+		}
+		
+	</script>
+	  <body background="dearchild.jpg">
+	    <h2>点击复制按钮，从第一个文本框复制到第二个文本框</h2>
+		<input type="text"  id="text01" />
+		<button onclick="Textcopied()">复制</button>
+		<input type="text"  id="text02"/>
+		<span id="checkUserNameResult" style="color: red "></span>
+		<br />
+		<br />
+		<a id="text03" style="color: green "></a>
+		
+	</body>
+</html>
